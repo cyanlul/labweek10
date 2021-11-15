@@ -23,7 +23,7 @@ export default class Form extends Component {
         return (
             <div>
                 <div style={{float: 'left'}}>
-                    <label for="email">Email</label>
+                    <label>Email</label>
                     <input
                         name='email'
                         placeholder='Enter email'
