@@ -22,7 +22,7 @@ export default class Form extends Component {
         console.log(this.state.formData);
         return (
             <div>
-                <div>
+                <div style={{float: 'left'}}>
                     <label for="email">Email</label>
                     <input
                         name='email'
@@ -62,7 +62,7 @@ export default class Form extends Component {
                     />
                 </div>
 
-                <div>
+                <div style = {{float: 'left'}}>
                     <label>City</label>
                     <input
                         name='city'
@@ -72,7 +72,7 @@ export default class Form extends Component {
                     />
                 </div>
 
-                <div>
+                <div style = {{float: 'left'}}>
                     <label>Province</label>
                     <select value={this.state.pro} onChange={e => this.setState({ province: e.target.value })}>
                         <option value="" disabled selected>Choose...</option>
@@ -89,19 +89,13 @@ export default class Form extends Component {
                     </select>
                 </div>
 
-                <div>
+                <div style = {{float: 'left'}}>
                     <label>Postal Code</label>
                     <input
                         name='postalCode'
                         value={this.state.postalCode}
                         onChange={e => this.setState({ postalCode: e.target.value })}
                     />
-                </div>
-                <div>
-                    <input
-                        type="checkbox"
-                        value={this.state.agree}/>
-                    Agree Terms & Conditions?
                 </div>
 
                 <button onClick={e => this.onSubmit(e)}>Submit</button>

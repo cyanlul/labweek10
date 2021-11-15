@@ -7,6 +7,12 @@ function App() {
     <div>
       Data Entry Model
       <Form></Form>
+      <div>
+        <input
+          type="checkbox"
+          value="Y"/>
+        Agree Terms & Conditions?
+      </div>
     </div>
   );
 }
